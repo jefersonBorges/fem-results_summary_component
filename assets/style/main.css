@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../fonts/HankenGrotesk-VariableFont_wght.ttf") format("True Type");
+  font-weight: 100 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+p {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 900;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.75rem;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.attribution .link {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */

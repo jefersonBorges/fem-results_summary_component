@@ -1,0 +1,76 @@
+//TYPOGRAPHY
+
+//family
+$font-primary: 'Fraunces', serif;
+$font-secondary: 'Montserrat', sans-serif;
+$font-tertiary: sans-serif;
+
+//weights
+$weight-light: 500;
+$weight-medium: 700;
+$weight-heavy: 800;
+
+//sizes
+//16px normally
+$size-document: 100%;
+
+//11px
+$size-small: 0.7rem;
+//18px
+$size-medium: 1.125rem;
+//36px
+$size-big: 2.25rem;
+
+//spacing
+
+//COLORS
+
+$light-red: hsl(0, 100%, 67%);
+$orangey-yellow: hsl(39, 100%, 56%);
+$green-teal: hsl(166, 100%, 37%);
+$cobalt-blue: hsl(234, 85%, 45%);
+$white: hsl(0, 0%, 100%);
+$pale-blue: hsl(221, 100%, 96%);
+$light-lavender: hsl(241, 100%, 89%);
+$dark-gray-blue: hsl(224, 30%, 27%);
+
+$link-blue: hsl(228, 45%, 44%);
+
+//GRADIENTS
+
+//background
+$light-slate-blue: hsl(252, 100%, 67%);
+$light-royal-blue: hsl(241, 81%, 54%);
+
+//circle
+$violet-blue: hsla(256, 72%, 46%, 1);
+$persian-blue: hsla(241, 72%, 46%, 0);
+
+//DEVICES
+
+//Mobile: 375px
+$mobile-min-width: 23.43em;
+//700px
+$mobile-max-width: 43.75em;
+//Desktop: 1440px
+$desktop-width: 90em;
+
+//MEDIA SIZES
+
+
+//MARGINS
+
+$margin-small: 0.75rem;
+$margin-medium: 1.5rem;
+$margin-big: 2.25rem;
+
+//PADDINGS
+
+$padding-small: $margin-small;
+$padding-medium: $margin-medium;
+$padding-big: $margin-big;
+
+//RADIUS
+
+$radius-small: $margin-small;
+$radius-medium: $margin-medium;
