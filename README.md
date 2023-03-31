@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repository](https://github.com/jefersonBorges/fem-results_summary_component)
+- Live Site URL: [Github live page](https://jefersonborges.github.io/fem-results_summary_component/)
 
 ## My process
 
