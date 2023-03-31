@@ -1,8 +1,60 @@
 @import 'fonts';
 @import 'variables';
+@import 'extends';
+@import 'mixins';
 @import 'common';
 
 
+.results-card{
+  @extend %flex-row-centered;
+
+  max-width: $desktop-width;
+  height: $results-card-height;
+
+  .overall-result{
+    @extend %flex-column-centered;
+
+    width: $overall-result-width;
+    height: 100%;
+
+    background: linear-gradient(to bottom, $light-slate-blue 0%, $light-royal-blue 100%);
+
+    .title{
+      @include title-color(title)
+    }
+    .classification{
+      @include title-color(classification)
+    }
+  }
+
+  .summary{
+    @extend %flex-column-start;
+
+    width: $summary-width;
+    height: 100%;
+
+    background-color: $white;
+
+    .attribute{
+      @extend %flex-row-between;
+
+      width: 100%;
+
+      .attribute-header{
+        @extend %flex-row-between;
+
+        .attribute-icon{
+          margin-right: $margin-small;
+        }
+
+        .reaction{
+          @include title-color(reaction)
+        }
+
+      }
+    }
+  }
+}
 
 .attribution {
   position: absolute;
