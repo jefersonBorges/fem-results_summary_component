@@ -1,6 +1,6 @@
 @mixin title-color($class){
 
-  @if $class == title{
+  @if $class == main-title{
     color: $dark-gray-blue;
   }
   @else if $class == reaction {
@@ -22,4 +22,5 @@
     color: $white;
   }
 
+  
 }

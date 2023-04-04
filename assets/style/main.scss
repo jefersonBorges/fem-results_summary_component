@@ -4,56 +4,128 @@
 @import 'mixins';
 @import 'common';
 
-
-.results-card{
+.results-card {
   @extend %flex-row-centered;
 
   max-width: $desktop-width;
   height: $results-card-height;
 
-  .overall-result{
+  border-radius: $radius-big;
+  background-color: $white;
+
+  .overall-result {
     @extend %flex-column-centered;
 
     width: $overall-result-width;
     height: 100%;
 
+    border-radius: $radius-big;
     background: linear-gradient(to bottom, $light-slate-blue 0%, $light-royal-blue 100%);
-
-    .title{
-      @include title-color(title)
-    }
-    .classification{
-      @include title-color(classification)
-    }
   }
 
-  .summary{
+  .attributes-summary {
     @extend %flex-column-start;
-
+    padding: $padding-big;
     width: $summary-width;
     height: 100%;
 
-    background-color: $white;
+    border-top-right-radius: $radius-big;
+    border-bottom-right-radius: $radius-big;
 
-    .attribute{
-      @extend %flex-row-between;
+  }
+}
 
-      width: 100%;
+.attribute {
+  @extend %flex-row-between;
+  width: 100%;
+  padding: $padding-small;
+  margin-bottom: $margin-small;
 
-      .attribute-header{
-        @extend %flex-row-between;
+  border-radius: $radius-small;
 
-        .attribute-icon{
-          margin-right: $margin-small;
-        }
+  font-size: $size-medium;
 
-        .reaction{
-          @include title-color(reaction)
-        }
+  &.reaction {
+    background-color: lighten($color: $light-red, $amount: 30%) ;
+  }
 
-      }
+  &.memory {
+    background-color: lighten($color: $orangey-yellow, $amount: 38%) ;
+  }
+
+  &.verbal {
+    background-color: lighten($color: $green-teal, $amount: 58%);
+  }
+
+  &.visual {
+    background-color: lighten($color: $cobalt-blue, $amount: 50%);
+  }
+
+  .attribute-header {
+    @extend %flex-row-start;
+
+    .attribute-icon {
+      margin-right: 1em;
     }
   }
+}
+
+.title {
+
+  &.main {
+    color: $light-lavender;
+  }
+
+  &.classification {
+    color: $white;
+  }
+
+  &.summary {
+    margin-bottom: $margin-small;
+    width: 100%;
+
+    color: $dark-gray-blue;
+    font-size: $size-big;
+    font-weight: $weight-medium;
+  }
+
+  &.reaction {
+    color: $light-red;
+    font-size: $size-medium;
+    font-weight: $weight-medium;
+  }
+
+  &.memory {
+    color: $orangey-yellow;
+    font-size: $size-medium;
+    font-weight: $weight-medium;
+  }
+
+  &.verbal {
+    color: $green-teal;
+    font-size: $size-medium;
+    font-weight: $weight-medium;
+  }
+
+  &.visual {
+    color: $cobalt-blue;
+    font-size: $size-medium;
+    font-weight: $weight-medium;
+  }
+}
+
+.continue {
+  width: 100%;
+  padding: $padding-small;
+  margin: $margin-small 0;
+
+  border: none;
+  border-radius: 5rem;
+  background-color: $dark-gray-blue;
+
+  color: $white;
+  font-size: $size-medium;
+  font-weight: $weight-medium;
 }
 
 .attribution {
