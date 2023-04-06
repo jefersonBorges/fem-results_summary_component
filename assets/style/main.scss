@@ -22,11 +22,26 @@
   background: linear-gradient($light-slate-blue, $light-royal-blue);
   border-radius: $medium;
 
-  .result{
-    @extend %flex-center-column;
-    padding: $medium;
-    background: linear-gradient($violet-blue, $persian-blue)
-    
+  font-size: $font-copy;
+  color: $light-lavender;
+
+  .result {
+    @extend %flex-between-column;
+    width: $diameter;
+    height: $diameter;
+    padding: $big;
+
+    background: linear-gradient($violet-blue, $persian-blue);
+    border-radius: calc($diameter/2);
+
+    .result-achieved {
+      font-size: $font-big;
+      color: $white;
+    }
+  }
+
+  .classification {
+    color: $white;
   }
 }
 
@@ -37,7 +52,47 @@
 
   .title{
     align-self: flex-start;
+    font-size: $font-copy;
   }
+
+  .attribute {
+    @extend %flex-between;
+    width: 100%;
+    padding: $small;
+
+    border-radius: $small;
+
+    font-size: $font-copy;
+
+    .header {
+      @extend %flex-center;
+      gap: $small;
+
+      .title {
+        font-size: $font-copy;
+      }
+    }
+  }
+}
+
+.reaction {
+  background-color: lighten($color: $light-red, $amount: 30%);
+  color: $light-red;
+}
+
+.memory {
+  background-color: lighten($color: $orangey-yellow, $amount: 40%);
+  color: $orangey-yellow;
+}
+
+.verbal {
+  background-color: lighten($color: $green-teal, $amount: 60%);
+  color: $green-teal;
+}
+
+.visual {
+  background-color: lighten($color:$cobalt-blue, $amount: 50%);
+  color: $cobalt-blue;
 }
 
 .attribution {

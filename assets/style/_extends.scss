@@ -4,7 +4,18 @@
   align-items: center;
 }
 
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 %flex-center-column {
   @extend %flex-center;
+  flex-direction: column;
+}
+
+%flex-between-column {
+  @extend %flex-between;
   flex-direction: column;
 }
