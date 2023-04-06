@@ -3,3 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: $font-document;
+}
+
+body {
+  @extend %flex-center;
+
+  position: relative;
+
+  min-height: 100vh;
+
+  background-color: $pale-blue;
+
+  font-family: $font-primary;
+}

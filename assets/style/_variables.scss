@@ -8,6 +8,15 @@ $weight-light: 500;
 $weight-medium: 700;
 $weight-heavy: 800;
 
+//sizes
+//16px normally
+$font-document: 100%;
+
+//18px
+$font-copy: 1.125rem;
+
+$font-small: 0.68rem;
+
 //COLORS
 
 $light-red: hsl(0, 100%, 67%);
@@ -18,7 +27,6 @@ $white: hsl(0, 0%, 100%);
 $pale-blue: hsl(221, 100%, 96%);
 $light-lavender: hsl(241, 100%, 89%);
 $dark-gray-blue: hsl(224, 30%, 27%);
-
 $link-blue: hsl(228, 45%, 44%);
 
 //gradients
@@ -31,11 +39,17 @@ $light-royal-blue: hsl(241, 81%, 54%);
 $violet-blue: hsla(256, 72%, 46%, 1);
 $persian-blue: hsla(241, 72%, 46%, 0);
 
+
 //RESPONSIVITY
 
 //Mobile: 375px
-$mobile-min-width: 23.43em;
-//700px
-$mobile-max-width: 43.75em;
+$mobile-min-width: 23.43rem;
+
 //Desktop: 1440px
-$desktop-width: 90em;
+$desktop-width: 90rem;
+
+
+//Spacing(margin, padding, radius)
+
+$small: 1rem;
+$medium: 1.5rem;

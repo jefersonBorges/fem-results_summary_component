@@ -4,3 +4,46 @@
 @import 'mixins';
 @import 'common';
 
+.results-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+
+  background-color: $white;
+  border-radius: $medium;
+  box-shadow: 5px 5px 20px 0px $light-lavender;
+}
+
+.overall-result {
+  @extend %flex-center-column;
+  gap: $medium;
+  padding: $medium;
+
+  background: linear-gradient($light-slate-blue, $light-royal-blue);
+  border-radius: $medium;
+
+  .result{
+    @extend %flex-center-column;
+    padding: $medium;
+    background: linear-gradient($violet-blue, $persian-blue)
+    
+  }
+}
+
+.attributes-summary {
+  @extend %flex-center-column;
+  padding: $medium;
+  gap: $small;
+
+  .title{
+    align-self: flex-start;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+
+  margin-bottom: 2em;
+  font-size: $font-small;
+}
