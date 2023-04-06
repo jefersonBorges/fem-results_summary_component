@@ -2,26 +2,11 @@
 
 //family
 $font-primary: 'Hanken Grotesk', sans-serif;
-//$font-secondary: 'Montserrat', sans-serif;
-$font-tertiary: sans-serif;
 
 //weights
 $weight-light: 500;
 $weight-medium: 700;
 $weight-heavy: 800;
-
-//sizes
-//16px normally
-$size-document: 100%;
-
-//11px
-$size-small: 0.7rem;
-//18px
-$size-medium: 1.125rem;
-//36px
-$size-big: 1.375rem;
-
-//spacing
 
 //COLORS
 
@@ -36,7 +21,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
 
 $link-blue: hsl(228, 45%, 44%);
 
-//GRADIENTS
+//gradients
 
 //background
 $light-slate-blue: hsl(252, 100%, 67%);
@@ -46,7 +31,7 @@ $light-royal-blue: hsl(241, 81%, 54%);
 $violet-blue: hsla(256, 72%, 46%, 1);
 $persian-blue: hsla(241, 72%, 46%, 0);
 
-//DEVICES
+//RESPONSIVITY
 
 //Mobile: 375px
 $mobile-min-width: 23.43em;
@@ -54,26 +39,3 @@ $mobile-min-width: 23.43em;
 $mobile-max-width: 43.75em;
 //Desktop: 1440px
 $desktop-width: 90em;
-
-//MEDIA SIZES
-$results-card-height: 25rem;
-$overall-result-width: 15rem;
-$summary-width: 20rem;
-
-//MARGINS
-
-$margin-small: 0.75rem;
-$margin-medium: 1.5rem;
-$margin-big: 2.25rem;
-
-//PADDINGS
-
-$padding-small: $margin-small;
-$padding-medium: $margin-medium;
-$padding-big: $margin-big;
-
-//RADIUS
-
-$radius-small: $margin-small;
-$radius-medium: $margin-medium;
-$radius-big: $margin-big;

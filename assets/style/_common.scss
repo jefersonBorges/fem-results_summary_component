@@ -3,19 +3,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html {
-  font-size: $size-document;
-}
-
-body {
-  position: relative;
-
-  @extend %flex-row-centered;
-
-  min-height: 100vh;
-
-  font-family: $font-primary;
-
-  background-color: $pale-blue;
-}
