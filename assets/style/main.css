@@ -1,24 +1,22 @@
 @font-face {
   font-family: "Hanken Grotesk";
-  src: url("../fonts/HankenGrotesk-VariableFont_wght.ttf");
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("../fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
 }
-.attributes-summary .attribute .header, body, .attributes-summary, .overall-result {
+.attributes-summary .attribute .header, body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.attributes-summary .attribute, .overall-result .result {
+.attributes-summary .attribute, .attributes-summary, .overall-result .result, .overall-result {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.attributes-summary, .overall-result {
-  flex-direction: column;
-}
-
-.overall-result .result {
+.attributes-summary, .overall-result .result, .overall-result {
   flex-direction: column;
 }
 
@@ -28,10 +26,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 100%;
-}
-
 body {
   position: relative;
   min-height: 100vh;
@@ -39,6 +33,11 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
 }
 
+@media only screen and (max-width: 37.5rem) {
+  body {
+    align-items: flex-start;
+  }
+}
 .results-card {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -48,68 +47,135 @@ body {
   box-shadow: 5px 5px 20px 0px hsl(241, 100%, 89%);
 }
 
+@media only screen and (max-width: 37.5rem) {
+  .results-card {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    min-width: 20rem;
+    margin-bottom: 3rem;
+    border-radius: 0;
+  }
+}
 .overall-result {
   gap: 1.5rem;
-  padding: 1.5rem;
+  width: 18rem;
+  padding: 2rem;
+  color: hsl(241, 100%, 89%);
+  font-size: 1.125rem;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 1.5rem;
-  font-size: 1.125rem;
-  color: hsl(241, 100%, 89%);
 }
 .overall-result .result {
-  width: 8rem;
-  height: 8rem;
+  height: -moz-max-content;
+  height: max-content;
+  aspect-ratio: 1/1;
   padding: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
   background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
-  border-radius: 4rem;
+  border-radius: 50%;
 }
 .overall-result .result .result-achieved {
-  font-size: 2rem;
   color: hsl(0, 0%, 100%);
+  font-size: 3.5rem;
+  font-weight: 800;
 }
 .overall-result .classification {
   color: hsl(0, 0%, 100%);
 }
-
-.attributes-summary {
-  padding: 1.5rem;
-  gap: 1rem;
+.overall-result .evaluation {
+  text-align: center;
 }
-.attributes-summary .title {
-  align-self: flex-start;
-  font-size: 1.125rem;
+
+@media only screen and (max-width: 37.5rem) {
+  .overall-result {
+    min-width: 20rem;
+    max-width: 37.5rem;
+    gap: 1rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+.attributes-summary {
+  width: 18rem;
+  padding: 2rem;
 }
 .attributes-summary .attribute {
   width: 100%;
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 0.75rem;
   font-size: 1.125rem;
+  border-radius: 0.75rem;
 }
 .attributes-summary .attribute .header {
   gap: 1rem;
 }
-.attributes-summary .attribute .header .title {
-  font-size: 1.125rem;
+.attributes-summary .attribute .score {
+  color: #7082b2;
+  font-weight: 500;
+}
+.attributes-summary .attribute .score .achieved {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
 }
 
+@media only screen and (max-width: 37.5rem) {
+  .attributes-summary {
+    min-width: 20rem;
+    max-width: 37.5rem;
+    gap: 1rem;
+    border-radius: 0;
+  }
+}
 .reaction {
-  background-color: #fff0f0;
   color: hsl(0, 100%, 67%);
+  background-color: #fff0f0;
 }
 
 .memory {
-  background-color: #fff8eb;
   color: hsl(39, 100%, 56%);
+  background-color: #fff8eb;
 }
 
 .verbal {
-  background-color: #f0fffb;
   color: hsl(166, 100%, 37%);
+  background-color: #f0fffb;
 }
 
 .visual {
-  background-color: #e7eafd;
   color: hsl(234, 85%, 45%);
+  background-color: #e7eafd;
+}
+
+.title {
+  font-size: 1.125rem;
+}
+.title.main {
+  font-size: 1.3125rem;
+}
+.title.summary {
+  align-self: flex-start;
+  color: hsl(224, 30%, 27%);
+  font-size: 1.3125rem;
+}
+.title.classification {
+  font-size: 1.5rem;
+}
+
+.button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  color: hsl(0, 0%, 100%);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+.button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 .attribution {
@@ -117,4 +183,5 @@ body {
   bottom: 0;
   margin-bottom: 2em;
   font-size: 0.68rem;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

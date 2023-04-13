@@ -1,25 +1,33 @@
 //TYPOGRAPHY
 
 //family
-$font-primary: 'Hanken Grotesk', sans-serif;
+$ff-default: 'Hanken Grotesk', sans-serif;
 
 //weights
-$weight-light: 500;
-$weight-medium: 700;
-$weight-heavy: 800;
+$fw-regular: 500;
+$fw-bold: 700;
+$fw-bolder: 800;
 
 //sizes
-//16px normally
-$font-document: 100%;
-
-//18px
-$font-copy: 1.125rem;
-
-//36px
-$font-big: 2rem;
 
 //11px
-$font-small: 0.68rem;
+$fs-100: 0.68rem;
+
+//16px
+$fs-200: 1rem;
+
+//18px
+$fs-300: 1.125rem;
+
+//21px
+$fs-400: 1.3125rem;
+
+//24px
+$fs-500: 1.5rem;
+
+//56px
+$fs-900: 3.5rem;
+
 
 //COLORS
 
@@ -46,18 +54,23 @@ $persian-blue: hsla(241, 72%, 46%, 0);
 
 //RESPONSIVITY
 
-//Mobile: 375px
-$mobile-min-width: 23.43rem;
+//320px
+$mobile-min-width: 20rem;
+
+//600px
+$mobile-max-width: 37.5rem;
+
 
 //Desktop: 1440px
 $desktop-width: 90rem;
 
-//circle
-$diameter: 8rem;
-
+//card
+$width-card: 18rem;
 
 //Spacing(margin, padding, radius)
 
+$smaller: 0.75rem;
 $small: 1rem;
 $medium: 1.5rem;
 $big: 2rem;
+$extra: 3rem;

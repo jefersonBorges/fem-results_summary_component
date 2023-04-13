@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="assets/style/main.css">
+  <script src="assets/script/main.js" defer></script>
   <title>Frontend Mentor | Results summary component</title>
 
 </head>
@@ -14,7 +15,7 @@
 
     <article class="overall-result">
       <h1 class="title main">Your Result</h1>
-      <p class="result"> <strong class="result-achieved">76</strong>  of 100</p>
+      <p class="result"> <strong class="result-achieved" id="result_achieved">0</strong>of 100</p>
     
       <h2 class="title classification">Great</h2>
       <p class="evaluation">You scored higher than 65% of the people who have taken these tests.</p>
@@ -27,43 +28,43 @@
 
         <div class="header">
           <img src="assets/images/icon-reaction.svg" alt="reaction-icon" class="attribute-icon">
-          <h3 class="title reaction">Reaction</h3>
+          <h3 class="title">Reaction</h3>
         </div>
 
-        <p class="score"><strong class="attribute-achieved">80</strong> / 100</p>
+        <p class="score"><strong class="achieved" id="score_reaction">0</strong> / 100</p>
       </article>
     
       <article class="attribute memory">
 
         <div class="header">
           <img src="assets/images/icon-memory.svg" alt="memory-icon" class="attribute-icon">
-          <h3 class=" title memory">Memory</h3>
+          <h3 class="title">Memory</h3>
         </div>
 
-        <p class="score"><strong class="attribute-achieved">92</strong> / 100</p>
+        <p class="score"><strong class="achieved" id="score_memory">0</strong> / 100</p>
       </article>
     
       <article class="attribute verbal">
 
         <div class="header">
           <img src="assets/images/icon-verbal.svg" alt="verbal-icon" class="attribute-icon">
-          <h3 class="title verbal">Verbal</h3>
+          <h3 class="title">Verbal</h3>
         </div>
 
-        <p class="score"><strong class="attribute-achieved">61</strong> / 100</p>
+        <p class="score"><strong class="achieved" id="score_verbal">0</strong> / 100</p>
       </article>
     
       <article class="attribute visual">
 
         <div class="header">
           <img src="assets/images/icon-visual.svg" alt="visual-icon" class="attribute-icon">
-          <h3 class="title visual">Visual</h3>
+          <h3 class="title">Visual</h3>
         </div>
 
-        <p class="score"><strong class="attribute-achieved">72</strong> / 100</p>
+        <p class="score"><strong class="achieved" id="score_visual">0</strong> / 100</p>
       </article>
     
-      <button class="btn-continue" type="button">Continue</button>
+      <button class="button" type="button">Continue</button>
     
     </article>
   </main>

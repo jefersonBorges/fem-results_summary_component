@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: $font-document;
-}
-
 body {
   @extend %flex-center;
 
@@ -17,5 +13,12 @@ body {
 
   background-color: $pale-blue;
 
-  font-family: $font-primary;
+  font-family: $ff-default;
+}
+
+@media only screen and (max-width: $mobile-max-width) {
+
+  body {
+    align-items: flex-start;
+  }
 }
