@@ -5,6 +5,7 @@
 *.xd
 *.rar
 *.zip
+*.txt
 
 ### Sass ###
 .sass-cache/
