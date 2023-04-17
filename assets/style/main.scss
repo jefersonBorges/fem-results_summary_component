@@ -21,6 +21,7 @@
     grid-template-rows: auto auto;
 
     min-width: $mobile-min-width;
+    width: $mobile-width;
     margin-bottom: $extra;
 
     border-radius: 0;
@@ -44,7 +45,6 @@
     @extend %flex-center-column;
     width: 9rem;
     height: 9rem;
-    padding: $big;
 
     font-size: $fs-200;
     font-weight: $fw-bold;
@@ -71,9 +71,7 @@
 @media only screen and (max-width: $mobile-max-width) {
 
   .overall-result {
-    min-width: $mobile-min-width;
-    max-width: $mobile-max-width;
-
+    width: 100%;
     gap: $small;
 
     border-top-right-radius: 0;
@@ -118,8 +116,7 @@
 @media only screen and (max-width: $mobile-max-width) {
 
   .attributes-summary {
-    min-width: $mobile-min-width;
-    max-width: $mobile-max-width;
+    width: 100%;
 
     border-radius: 0;
   }

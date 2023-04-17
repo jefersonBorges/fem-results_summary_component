@@ -56,6 +56,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
     min-width: 20rem;
+    width: 23.44rem;
     margin-bottom: 3rem;
     border-radius: 0;
   }
@@ -72,7 +73,6 @@ body {
 .overall-result .result {
   width: 9rem;
   height: 9rem;
-  padding: 2rem;
   font-size: 1rem;
   font-weight: 700;
   background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
@@ -92,8 +92,7 @@ body {
 
 @media only screen and (max-width: 37.5rem) {
   .overall-result {
-    min-width: 20rem;
-    max-width: 37.5rem;
+    width: 100%;
     gap: 1rem;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
@@ -124,8 +123,7 @@ body {
 
 @media only screen and (max-width: 37.5rem) {
   .attributes-summary {
-    min-width: 20rem;
-    max-width: 37.5rem;
+    width: 100%;
     border-radius: 0;
   }
 }
