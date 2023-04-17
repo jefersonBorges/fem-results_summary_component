@@ -70,14 +70,13 @@ body {
   border-radius: 1.5rem;
 }
 .overall-result .result {
-  width: -moz-max-content;
-  width: max-content;
-  aspect-ratio: 1/1;
-  padding: 1rem 3rem;
+  width: 9rem;
+  height: 9rem;
+  padding: 2rem;
   font-size: 1rem;
   font-weight: 700;
   background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
-  border-radius: 100vw;
+  border-radius: 50%;
 }
 .overall-result .result .result-achieved {
   color: hsl(0, 0%, 100%);

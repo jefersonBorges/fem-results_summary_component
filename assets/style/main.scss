@@ -42,15 +42,15 @@
 
   .result {
     @extend %flex-center-column;
-    width: max-content;
-    aspect-ratio: 1/1;
-    padding: $small $extra;
+    width: 9rem;
+    height: 9rem;
+    padding: $big;
 
     font-size: $fs-200;
     font-weight: $fw-bold;
 
     background: linear-gradient($violet-blue, $persian-blue);
-    border-radius: 100vw;
+    border-radius: 50%;
 
     .result-achieved {
       color: $white;
