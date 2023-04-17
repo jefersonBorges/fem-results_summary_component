@@ -42,9 +42,9 @@
 
   .result {
     @extend %flex-between-column;
-    min-width: max-content;
+    width: max-content;
     aspect-ratio: 1/1;
-    padding: $big;
+    padding: $extra;
 
     font-size: $fs-200;
     font-weight: $fw-bold;

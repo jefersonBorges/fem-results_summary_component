@@ -66,10 +66,10 @@ body {
   border-radius: 1.5rem;
 }
 .overall-result .result {
-  min-width: -moz-max-content;
-  min-width: max-content;
+  width: -moz-max-content;
+  width: max-content;
   aspect-ratio: 1/1;
-  padding: 2rem;
+  padding: 3rem;
   font-size: 1rem;
   font-weight: 700;
   background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
