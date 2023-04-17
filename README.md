@@ -2,6 +2,8 @@
 
 This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV).
 
+Any comments on the code are welcome! This time the challenge was to improve the acessibility and responsivity of the page. I Used JavaScript DOM to generate the attributes in the summary section and to calculate the overall result. What do you guys think of that?
+
 ## Table of contents
 
 - [Overview](#overview)
