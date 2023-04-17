@@ -4,19 +4,23 @@
   font-weight: 100 900;
   src: url("../fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
 }
-.attributes-summary .attribute .header, body {
+.attributes-summary .attribute .header, body, .overall-result .result {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.attributes-summary .attribute, .attributes-summary, .overall-result .result, .overall-result {
+.attributes-summary .attribute, .attributes-summary, .overall-result {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.attributes-summary, .overall-result .result, .overall-result {
+.overall-result .result {
+  flex-direction: column;
+}
+
+.attributes-summary, .overall-result {
   flex-direction: column;
 }
 
@@ -69,7 +73,7 @@ body {
   width: -moz-max-content;
   width: max-content;
   aspect-ratio: 1/1;
-  padding: 3rem;
+  padding: 1rem 3rem;
   font-size: 1rem;
   font-weight: 700;
   background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));

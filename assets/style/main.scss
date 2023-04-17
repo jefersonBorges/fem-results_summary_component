@@ -41,10 +41,10 @@
   border-radius: $medium;
 
   .result {
-    @extend %flex-between-column;
+    @extend %flex-center-column;
     width: max-content;
     aspect-ratio: 1/1;
-    padding: $extra;
+    padding: $small $extra;
 
     font-size: $fs-200;
     font-weight: $fw-bold;
