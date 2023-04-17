@@ -1,4 +1,5 @@
 const Display_scores = {
+  
   init : function(){
     this.cache_selectors()
     this.set_attributes_list(this.params.source, this.$summary)
@@ -8,10 +9,6 @@ const Display_scores = {
   cache_selectors : function(){
     this.$result_achieved = document.querySelector('#result_achieved')
     this.$summary = document.querySelector('#summary')
-  },
-
-  get_attributes : async function(source){
-    return await fetch(source).then(response => response.json())
   },
 
   set_attributes_list : function (source, summary){
@@ -44,6 +41,10 @@ const Display_scores = {
     .then(
       result => { this.$result_achieved.innerHTML = result }
     )
+  },
+
+  get_attributes : async function(source){
+    return await fetch(source).then(response => response.json())
   },
 
   write_attribute : function (category, score, icon){
