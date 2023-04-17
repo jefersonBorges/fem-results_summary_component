@@ -66,8 +66,8 @@ body {
   border-radius: 1.5rem;
 }
 .overall-result .result {
-  width: -moz-max-content;
-  width: max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   aspect-ratio: 1/1;
   padding: 2rem;
   font-size: 1rem;
