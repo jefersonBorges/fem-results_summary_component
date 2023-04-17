@@ -73,7 +73,7 @@ body {
   font-size: 1rem;
   font-weight: 700;
   background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
-  border-radius: 50%;
+  border-radius: 100vw;
 }
 .overall-result .result .result-achieved {
   color: hsl(0, 0%, 100%);
@@ -99,6 +99,7 @@ body {
 .attributes-summary {
   width: 18rem;
   padding: 2rem;
+  gap: 1rem;
 }
 .attributes-summary .attribute {
   width: 100%;
@@ -122,7 +123,6 @@ body {
   .attributes-summary {
     min-width: 20rem;
     max-width: 37.5rem;
-    gap: 1rem;
     border-radius: 0;
   }
 }

@@ -50,7 +50,7 @@
     font-weight: $fw-bold;
 
     background: linear-gradient($violet-blue, $persian-blue);
-    border-radius: 50%;
+    border-radius: 100vw;
 
     .result-achieved {
       color: $white;
@@ -86,6 +86,7 @@
 
   width: $width-card;
   padding: $big;
+  gap: $small;
 
   .attribute {
     @extend %flex-between;
@@ -119,8 +120,6 @@
   .attributes-summary {
     min-width: $mobile-min-width;
     max-width: $mobile-max-width;
-
-    gap: $small;
 
     border-radius: 0;
   }
